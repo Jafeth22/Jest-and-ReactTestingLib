@@ -1,0 +1,22 @@
+Types of Tests
+•Unit Test = Test one unit of test isolation
+•Integration Test = How multiple test units work together
+•Functional Test = Test a particular function of software, here you test the behavior
+
+Test-Driven Development (TDD) vs Behavior-Driven Development (BDD)
+    •BDD
+        -Very explicit
+        -To work with others roles
+        -Defines process for different groups to interact
+
+Guides on which query I should use
+    •Queries Accessible to Everyone: Reflect the experience of visual/mouse users, as well as assistive technologies
+        -getByRole: Elements that I can identify on the page
+        -getByLabelText/getByDisplayValue: For forms, something that screen readers have access to
+        -getByPlaceholderText: For input elements
+        -getByText: Display elements that aren't interactive
+    •Semantic Queries
+        -getByAltText: For images
+        -getByTitle: Elements that have Title attribute associated with them
+    •Test IDs
+        -getByTestId: User cannot see them, screen readers can't access them, and only to be used if it is entirely necessary
