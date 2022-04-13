@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+export function replaceCamelWithSpaces(colorName) {
+  //Si encuentra una mayúscula en medio de la palabra, agreguele un espacio antes
+  return colorName.replace(/\B([A-Z])\B/g, ' $1');
+}
+
 function App() {
   const [ buttonColor, setButtonColor ] = useState('red');
   const [ disabled, setdisabled ] = useState(false);
