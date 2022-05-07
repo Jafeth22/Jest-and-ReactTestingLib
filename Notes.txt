@@ -20,3 +20,10 @@ Guides on which query I should use
         -getByTitle: Elements that have Title attribute associated with them
     •Test IDs
         -getByTestId: User cannot see them, screen readers can't access them, and only to be used if it is entirely necessary
+
+---------------------------------------------------------------------
+Query Methods
+    •Commands
+        -get: Expect element to be in DOM
+        -query: Expect element not to be in DOM
+        -find: Expect element to appear async
