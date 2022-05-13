@@ -27,3 +27,11 @@ Query Methods
         -get: Expect element to be in DOM
         -query: Expect element not to be in DOM
         -find: Expect element to appear async
+
+---------------------------------------------------------------------
+Mock Server Worker Handler
+    rest.get('URL', (req, res, ctx) => {...});
+        •req: request obj
+        •res: function to create response
+        •ctx: utility to build response
+
